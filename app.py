@@ -1,14 +1,14 @@
 import streamlit as st
 import pickle
-from sklearn.datasets import load_iris
+#from sklearn.datasets import load_iris
 import pandas as pd
 
 # Đường link đến dữ liệu trên GitHub
-#url = "https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv"
+url = "https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv"
 # Đọc dữ liệu vào DataFrame
-#iris = pd.read_csv(url)
+iris = pd.read_csv(url)
 
-iris = load_iris()
+#iris = load_iris()
 
 # Load the trained model
 clf = pickle.load(open('iris_model.pkl', 'rb'))
