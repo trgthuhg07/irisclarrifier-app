@@ -1,6 +1,5 @@
 import streamlit as st
 import pickle
-pip install scikit-learn
 from sklearn.datasets import load_iris
 
 iris = load_iris()
