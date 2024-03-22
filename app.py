@@ -11,13 +11,6 @@ iris = pd.read_csv(url)
 #iris = load_iris()
 #####
 # Load the trained model
-import os
-import pickle
-# Đường dẫn tuyệt đối đến file iris_model.pkl
-url=""
-# Load mô hình từ file
-with open(model_path, 'rb') as f:
-    clf = pickle.load(f)
 
 clf = pickle.load(open('iris_model.pkl', 'rb'))
 
