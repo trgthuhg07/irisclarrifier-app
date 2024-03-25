@@ -1,15 +1,14 @@
-#from sklearn.datasets import load_iris
+from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import pickle as pickle
-import pandas as pd
 
-# Đường link đến dữ liệu trên GitHub
-url = "https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv"
-# Đọc dữ liệu vào DataFrame
-iris = pd.read_csv(url)
+# # Đường link đến dữ liệu trên GitHub
+# url = "https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv"
+# # Đọc dữ liệu vào DataFrame
+# iris = pd.read_csv(url)
 
-#iris = load_iris()
+iris = load_iris()
 X, y =iris.data, iris.target
 
 print(X.shape)
