@@ -1,5 +1,6 @@
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
+#from sklearn.linear_model import LogisticRgression
 from sklearn.model_selection import train_test_split
 import pickle as pickle
 
@@ -12,7 +13,8 @@ print(X.shape)
 X_train, X_test, y_train, y_test =train_test_split(X,y,test_size=0.2)
 print(X_train.shape)
 print(y_train.shape)
-
+#Train a RandomForestClassifier
+#Thay thế thuật toán RandomForestClassifier bằng LogisticRgression
 clf=RandomForestClassifier()
 clf.fit(X_train, y_train)
 
