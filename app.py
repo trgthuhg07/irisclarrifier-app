@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 from sklearn.datasets import load_iris
-import pandas as pd
 
 # # Đường link đến dữ liệu trên GitHub
 # url = "https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv"
